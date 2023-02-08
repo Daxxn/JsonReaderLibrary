@@ -1,17 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Json Reader Library</Title>
-    <Description>JSON reader library using Newtonsoft.</Description>
-    <RepositoryUrl>git@github.com:Daxxn/JsonReaderLibrary.git</RepositoryUrl>
-  </PropertyGroup>
+   <PropertyGroup>
+      <TargetFrameworks>net6.0;net462;net47;net48</TargetFrameworks>
+      <Version>1.1.0</Version>
+      <ImplicitUsings>disable</ImplicitUsings>
+      <Nullable>disable</Nullable>
+      <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+      <Title>Json Reader Library</Title>
+      <Description>JSON reader library using Newtonsoft.</Description>
+      <RepositoryUrl>git@github.com:Daxxn/JsonReaderLibrary.git</RepositoryUrl>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-  </ItemGroup>
+   <ItemGroup>
+      <None Include="..\LICENSE.txt">
+         <Pack>True</Pack>
+         <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+         <Pack>True</Pack>
+         <PackagePath>\</PackagePath>
+      </None>
+   </ItemGroup>
+
+   <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+   </ItemGroup>
 
 </Project>
