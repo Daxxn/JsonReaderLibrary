@@ -2,7 +2,7 @@
 
    <PropertyGroup>
       <TargetFrameworks>net6.0;net461;net462;net47;net48</TargetFrameworks>
-      <Version>1.1.1</Version>
+      <Version>1.1.2</Version>
       <ImplicitUsings>disable</ImplicitUsings>
       <Nullable>disable</Nullable>
       <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -25,7 +25,7 @@
    </ItemGroup>
 
    <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
    </ItemGroup>
 
 </Project>
